@@ -66,6 +66,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   src: url(../fonts/ProximaNova-Bold.otf);
 }
 
+@font-face {
+  font-family: Uni Sans;
+  src: url(../fonts/Uni Sans Heavy.otf);
+}
+
 a {
   color: white;
   text-decoration: none;
@@ -110,6 +115,7 @@ h1:after {
 body {
   background-image: url("../images/background.png");
   color: #ffffff;
+  font-family: 'PT Serif', serif;
 }
 
 .container {
@@ -173,4 +179,134 @@ body {
   text-align: center;
 }
 
+.support-team-block__battle-name {
+  font-size: 20px;
+  line-height: 40px;
+  color: #cccccc;
+}
 
+.support-team-block__status {
+  font-style: italic;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.support-team-block__team {
+  height: 568px;
+  width: 435px;
+  background-image: url(../images/team-bg.png);
+  position: relative;
+}
+
+.support-team-block__team:after {
+  height: 568px;
+  width: 435px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: "";
+  background-image: url(../images/team-border.png);
+}
+
+.support-team-block__team-header-1,
+.support-team-block__team-header-2 {
+  height: 68px;
+  width: 419px;
+  display: inline-block;
+  position: absolute;
+  top: 6px;
+  left: 7px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 60px;
+}
+
+.support-team-block__team-header-1 {
+  background-image:url(../images/team-name-bg-1.png);
+}
+
+.support-team-block__team-logo {
+  position: absolute;
+  top:100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.support-team-block__team-sum {
+  font-family: 'Proxima Nova', sans-serif;
+  color: #222222;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 600;
+  position: absolute;
+  top: 340px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.support-team-block__team-gold-right,
+.support-team-block__team-gold-left {
+  display: block;
+  position: absolute;
+  bottom: 172px;
+}
+
+.support-team-block__team-gold-right {
+  right: 25px;
+}
+
+.support-team-block__team-gold-left {
+  left: 13px;
+}
+
+.support-team-block__team-info {
+  font-size: 14px;
+  line-height: 18px;
+  color: #4c4640;
+  position: absolute;
+  top: 415px;
+  display: inline-block;
+  width: 351px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: left;
+}
+
+.support-team-block__team-donate-btn-1,
+.support-team-block__team-donate-btn-2 {
+  width: 431px;
+  height: 70px;
+  position: absolute;
+  bottom: 11px;
+  left: 2px;
+  cursor: pointer;
+  z-index: 2;
+  border: none;
+  outline: none;
+  transition: all .2s;
+  font-size: 32px;
+  line-height: 65px;
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.support-team-block__team-donate-btn-1 {
+  background-image: url(../images/team-btn-bg-1.png);
+}
+
+.support-team-block__team-donate-btn-1:hover {
+  background-image: url(../images/team-btn-hover-bg-1.png);
+  transition: all .2s;
+}
+
+.support-team-block__team-donate-btn-2 {
+  background-image: url(../images/team-btn-bg-2.png);
+}
+
+.support-team-block__team-donate-btn-2:hover {
+  background-image: url(../images/team-btn-hover-bg-2.png);
+  transition: all .2s;
+}
