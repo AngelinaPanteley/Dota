@@ -1,8 +1,7 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+@charset "UTF-8";
+
+/*reset.css*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,51 +23,154 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
-/* line 9, ../sass/screen.scss */
+/*font styles*/
+
+@font-face {
+  font-family: Proxima Nova;
+  src: url(../fonts/ProximaNova-Bold.otf);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-shadow: 0 0 2px #ffffff;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 40px;
+  line-height: 55px;
+  position: relative;
+}
+
+h1:after {
+  width: 250;
+  height: 1px;
+  background-color: #cccccc;
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*base*/
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+body {
+  background-image: url("../images/background.png");
+  color: #ffffff;
+}
+
 .container {
   width: 1199px;
   margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.8);
 }
+
+
+/*header styles*/
+
+.header {
+  height: 100px;
+  padding: 51px 107px 37px 407px;
+  position: relative;
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.logo {
+  position: absolute;
+  top: 32px;
+  left: 109px;
+}
+
+.navigation__item {
+  display: inline-block;
+  width: 160px;
+  text-align: center;
+}
+
+.language-switcher {
+  line-height: 16px;
+  font-size: 12px;
+  position: absolute;
+  top: 53px;
+  right: 107px;
+}
+
+.language-switcher_not-active {
+  color: #4c4c4c;
+}
+
+.header:after {
+  width: 1080px;
+  display: block;
+  content: "";
+  height: 1px;
+  background-color:#7b7c7d;
+  position: absolute;
+  left:59px;
+  bottom:0px;
+}
+
+/*support-team-block*/
+
+.support-team-block {
+  padding: 30px 46px 0 55px;
+  text-align: center;
+}
+
+
