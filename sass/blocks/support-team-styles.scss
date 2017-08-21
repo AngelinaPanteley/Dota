@@ -1,0 +1,124 @@
+/*support-team-block top*/
+
+.support-team-block {
+  padding-top: 30px;
+  text-align: center;
+  position: relative;
+
+.support-team-block__battle-name {
+  font-size: 20px;
+  line-height: 40px;
+  color: #cccccc;
+}
+
+.support-team-block__status,
+.support-team-block__timer {
+  font-style: italic;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.support-team-block__team-container {
+padding-left: 30px;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+  -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+justify-content: space-around;
+  -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+flex-flow: row nowrap;
+  -webkit-align-items: center;
+    -ms-flex-align: center;
+  align-items: center;
+}
+
+.support-team-block__team {
+  height: 568px;
+  width: 435px;
+  background-image: url(../images/team-bg.png);
+  position: relative;
+  transition: all .5s;
+  background-size: cover;
+}
+
+.support-team-block__team:last-child {
+  float: right;
+}
+
+.support-team-block__team:after {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: "";
+  background-image: url(../images/team-border.png);
+  background-size: cover;
+  z-index: 0;
+}
+
+.support-team-block__team-header-1,
+.support-team-block__team-header-2 {
+  height: 11%;
+  display: inline-block;
+  position: absolute;
+  top: 1%;
+  left: 0%;
+  width: 96%;
+  margin-left: 4px;
+  border-radius: 13px;
+  transition: all .5s;
+  color: #ffffff;
+  background-size: cover;
+}
+
+.support-team-block__team-header-1 {
+  background-image:url(../images/team-name-bg-1.png);
+}
+
+.support-team-block__team-header-2 {
+  background-image:url(../images/team-name-bg-2.png);
+}
+
+.support-team-block__team-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 60px;
+  position: absolute;
+  left: 50%;
+  top: 7px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.support-team-block__team-logo {
+  position: absolute;
+  top: 19%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+  width: 48%;
+}
+
+.support-team-block__team-sum {
+  font-family: 'Proxima Nova', sans-serif;
+  color: #222222;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 600;
+  position: absolute;
+  top: 340px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+
+}
+
+}
+

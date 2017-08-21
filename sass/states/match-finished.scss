@@ -1,0 +1,157 @@
+/*styles for "match-finished" */
+
+.match-finished .local-link,
+.match-finished .comments-block,
+.match-finished .stream-block,
+.match-finished .let-me-know-block {
+  display: none;
+}
+
+.match-finished .support-team-block {
+  padding-bottom: 74px;
+}
+
+.support-team-block {
+
+.loser {
+  width: 306px;
+  height: 400px;
+  top: 79px;
+  left: 120px;
+  position: relative;
+}
+
+.loser:before {
+  content: "";
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  left: 0;
+}
+
+.loser .support-team-block__team-name {
+  top: -3px;
+  font-size: 20px;
+}
+
+.loser .support-team-block__team-donate-btn-1,
+.loser .support-team-block__team-donate-btn-2 {
+  width: 302px;
+  height: 48px;
+  bottom: 7px;
+  font-size: 25px;
+  line-height: 25px;
+}
+
+.loser button,
+.winner button {
+  color: rgba(0,0,0,0);
+  z-index: 0;
+}
+
+.loser button:after {
+  content: "loser";
+}
+
+.winner button:after {
+  content: "winner";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.loser button:after,
+.winner button:after {
+  color: #ffffff;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+}
+
+.loser .support-team-block__team-sum {
+  font-size: 40px;
+  top: 58%;
+}
+
+.loser .support-team-block__team-info,
+.loser .support-team-block-icon,
+.winner .support-team-block__team-info,
+.winner .support-team-block-icon {
+  display: none;
+}
+
+.loser .support-team-block__loser-info,
+.winner .support-team-block__winner-info {
+  display: block;
+  top: 74%;
+  width: 100%;
+  text-align: center;
+}
+
+.loser:hover .support-team-block__team-header-1,
+.loser:hover .support-team-block__team-header-2,
+.winner:hover .support-team-block__team-header-1,
+.winner:hover .support-team-block__team-header-2 {
+  box-shadow: none;
+}
+
+.support-team-block__team.loser:last-child {
+  left: -138px;
+}
+
+.support-team-block__final-score {
+  background-image: url(../images/final-score-bg.png);
+  width: 285px;
+  height: 166px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+  top: 343px;
+  z-index: 11;
+  display: none;
+}
+
+.support-team-block__final-score__title {
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  position: absolute;
+  top: 19px;
+  left: 83px;
+}
+
+.support-team-block__final-score__digits {
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 80px;
+  font-weight: 600;
+  position: absolute;
+  top: 61px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+
+}
+
+}
+
+.match-finished .support-team-block__final-score {
+  display: block;
+}
+
+.match-finished .support-team-block  .support-team-block__battle-icon,
+.match-finished .support-team-block  .support-team-block__status,
+.match-finished .support-team-block  .information-icon {
+  display: none;
+}
+

@@ -1,0 +1,113 @@
+.donate-popup-1,
+.donate-popup-2 {
+
+.popup__sum-container {
+  padding-right: 100px;
+  padding-left: 100px;
+  margin-top: 15px;
+  line-height: 70px;
+  font-weight: 600;
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 60px;
+  color: #222222;
+}
+
+.popup__sum-container span {
+  font-size: 35px;
+}
+
+.popup__sum-container__item {
+  position: relative;
+  float: left;
+  width: 25%;
+  z-index: 20;
+}
+
+.popup__sum-container__item:after {
+  background-image: url(../images/popup-sum-after.png);
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 148px;
+  bottom: -5px;
+  left: 18px;
+
+}
+
+.popup__sum-container__item:last-child:after {
+  bottom: -11px;
+}
+
+.popup__sum-radio {
+  opacity: 0;
+  z-index: 21;
+}
+
+.popup__sum-radio__text-1,
+.popup__sum-radio__text-2 {
+  position: relative;
+}
+
+.popup__sum-radio:checked+.popup__sum-radio__text-1,
+.popup__sum-radio:checked+.popup__sum-radio__text-2 {
+  color: #ffffff;
+
+}
+
+.popup__sum-radio:checked+.popup__sum-radio__text-1:after,
+.popup__sum-radio:checked+.popup__sum-radio__text-2:after {
+  display: inline-block;
+  width: 229px;
+  height: 127px;
+  background-image: url(../images/popup-light-1.png);
+  content: "";
+  position: absolute;
+  top: -49px;
+  left: -29px;
+  z-index: -1;
+}
+
+.popup__sum-radio:checked+.popup__sum-radio__text-2:after {
+  background-image: url(../images/popup-light-2.png);
+}
+
+.popup__sum-radio__other-sum {
+  width: 100%;
+  padding: 0 20px 0 50px;
+  height: 70px;
+  background-color: rgba(0,0,0,0);
+  border: none;
+  outline: none;
+  display: none;
+  line-height: 70px;
+  font-weight: 600;
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 60px;
+  color: #222222;
+}
+
+.popup__sum-container__item:last-child .popup__sum-radio:checked+.popup__sum-radio__text-1+.popup__sum-radio__other-sum,
+.popup__sum-container__item:last-child .popup__sum-radio:checked+.popup__sum-radio__text-2+.popup__sum-radio__other-sum {
+  display: block;
+}
+
+.popup__sum-container__item:last-child .popup__sum-radio:checked+.popup__sum-radio__text-1+.popup__sum-radio__other-sum:after,
+.popup__sum-container__item:last-child .popup__sum-radio:checked+.popup__sum-radio__text-2+.popup__sum-radio__other-sum:after {
+  display: inline-block;
+  width: 229px;
+  height: 127px;
+  background-image: url(../images/popup-light-1.png);
+  content: "";
+  position: absolute;
+  top: -49px;
+  left: -29px;
+  z-index: -1;
+
+}
+
+.popup__sum-container__item:last-child .popup__sum-radio:checked+.popup__sum-radio__text-1,
+.popup__sum-container__item:last-child .popup__sum-radio:checked+.popup__sum-radio__text-2 {
+  display: none;
+}
+
+}

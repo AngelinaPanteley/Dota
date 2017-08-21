@@ -1,0 +1,101 @@
+/*support-team-block bottom*/
+
+.support-team-block {
+
+.support-team-block__team-gold-right,
+.support-team-block__team-gold-left {
+  display: block;
+  position: absolute;
+  bottom: 29%;
+  width: 26%;
+}
+
+.support-team-block__team-gold-right {
+  right: 2%;
+}
+
+.support-team-block__team-gold-left {
+  left: 2%;
+}
+
+.support-team-block__team-info,
+.support-team-block__loser-info,
+.support-team-block__winner-info {
+  font-size: 14px;
+  line-height: 18px;
+  color: #4c4640;
+  position: absolute;
+  top: 415px;
+  display: inline-block;
+  width: 351px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: left;
+}
+
+.support-team-block__loser-info,
+.support-team-block__winner-info {
+  display: none;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.support-team-block__winner-info {
+  font-size: 24px;
+  color: #222222;
+}
+
+.support-team-block__team-donate-btn-1,
+.support-team-block__team-donate-btn-2 {
+  width: 431px;
+  height: 70px;
+  position: absolute;
+  bottom: 11px;
+  left: 2px;
+  cursor: pointer;
+  z-index: 2;
+  border: none;
+  outline: none;
+  transition: all .2s;
+  font-size: 32px;
+  line-height: 65px;
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-size: cover;
+}
+
+.support-team-block__team-donate-btn-1 {
+  background-image: url(../images/team-btn-bg-1.png);
+}
+
+.support-team-block__team-donate-btn-1:hover {
+  background-image: url(../images/team-btn-hover-bg-1.png);
+  transition: all .2s;
+}
+
+.support-team-block__team:hover .support-team-block__team-header-1{
+  box-shadow: 0 20px 40px 5px #47a258;
+  transition: all .5s;
+}
+
+.support-team-block__team:hover .support-team-block__team-header-2{
+  box-shadow: 0 20px 40px 5px #a73427;
+  transition: all .5s;
+}
+
+.support-team-block__team-donate-btn-2 {
+  background-image: url(../images/team-btn-bg-2.png);
+}
+
+.support-team-block__team-donate-btn-2:hover {
+  background-image: url(../images/team-btn-hover-bg-2.png);
+  transition: all .2s;
+}
+
+}

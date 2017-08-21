@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+@import "fontello.css";
+@import "reset.css";
+@import "font-styles.css";
+@import "blocks/header-styles";
+@import "blocks/support-team-styles";
+@import "blocks/support-team-block-bottom";
+@import "blocks/comments-block-styles";
+@import "blocks/stream-block-styles";
+@import "blocks/let-me-know-styles";
+@import "blocks/footer";
+
+@import "popup/donate-popups";
+@import "states/match-finished";
+@import "states/match-not-going";
+
+/*base*/
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.wrapper {
+  background-image: url("../images/background.png");
+  font-family: 'PT Serif', serif;
+  color: #ffffff;
+}
+
+.container {
+  width: 1199px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.row:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.central-box {
+  margin: 0 auto;
+  width: 980px;
+  position: relative;
+}

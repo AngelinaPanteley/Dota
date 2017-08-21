@@ -1,0 +1,67 @@
+/*styles for "match-not-going" */
+
+.match-not-going .twitch-comments{
+  display: none;
+}
+
+.twitch-content {
+  position: relative;
+}
+
+.match-not-going .twitch-content:after {
+  content: "";
+  background-color: rgba(255,255,255,0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+
+.twitch-content__title {
+  display: none;
+}
+
+.match-not-going .twitch-content__title {
+  display: block;
+  color: #222222;
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 60px;
+  position: absolute;
+  top: 320px;
+  z-index: 1;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.match-not-going .support-team-block__status {
+  display: none;
+}
+
+.support-team-block__timer {
+  display: none;
+}
+
+.match-not-going .support-team-block__timer {
+  display: block;
+}
+
+
+/* http://megatimer.ru/ */
+
+.timer {
+  display: none;
+}
+
+.match-not-going .timer {
+  display: block;
+  position: absolute;
+  top: 400px;
+  z-index: 1;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}

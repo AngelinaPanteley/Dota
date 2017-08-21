@@ -1,0 +1,52 @@
+/*header styles*/
+
+.header {
+  height: 100px;
+  padding: 0px 107px 0px 107px;
+  position: relative;
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+.navigation__item {
+  display: inline-block;
+  width: 165px;
+  text-align: center;
+}
+
+.language-switcher {
+  line-height: 16px;
+  font-size: 12px;
+  /*position: absolute;
+  top: 53px;
+  right: 107px;*/
+}
+
+.language-switcher_not-active {
+  color: #4c4c4c;
+}
+
+}
+.header:after {
+  width: 1080px;
+  display: block;
+  content: "";
+  height: 1px;
+  background-color:#7b7c7d;
+  position: absolute;
+  left:59px;
+  bottom:0px;
+}

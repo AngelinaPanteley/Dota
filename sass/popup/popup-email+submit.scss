@@ -1,0 +1,77 @@
+/*email-box + submit-button*/
+
+.donate-popup-1,
+.donate-popup-2 {
+
+.popup__email-box {
+  z-index: 20;
+  position: absolute;
+  top: 532px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+}
+
+.popup__email-box:after {
+  content: "";
+  width: 454px;
+  height: 8px;
+  background-image: url(../images/popup-email-after.png);
+  position: absolute;
+  bottom: -9px;
+  left: -30px;
+}
+
+.popup__email-box__input {
+  width: 400px;
+  background: rgba(0,0,0,0);
+  border: none;
+  border-bottom: 1px solid #938679;
+  font-size: 16px;
+  font-family: 'PTSerif', sans-serif;
+  color: #222222;
+  outline: none;
+}
+
+.popup__email-box__input[placeholder] {
+  color: #222222;
+}
+
+.popup__submit-1,
+.popup__submit-2 {
+  width: 899px;
+  height: 68px;
+  position: absolute;
+  top: 581px;
+  left: 1px;
+  outline: none;
+  border: none;
+  z-index: 23;
+  color: #fff;
+  font-size: 34px;
+  text-transform: uppercase;
+  font-family: 'Proxima Nova', sans-serif;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.popup__submit-2 {
+  background-image: url(../images/popup-btn-2.png);
+}
+
+.popup__submit-2:hover {
+  background-image: url(../images/popup-btn-clicked-2.png);
+  transition: all .3s;
+}
+
+.popup__submit-1 {
+  background-image: url(../images/popup-btn-1.png);
+}
+
+.popup__submit-1:hover {
+  background-image: url(../images/popup-btn-clicked-1.png);
+  transition: all .3s;
+}
+
+}
